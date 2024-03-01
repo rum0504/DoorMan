@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 70d29ee1db5e5514dbf23cad11cfc90f, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 209835830}
   m_Layer: 0
   m_Name: Visitor
-  m_TagString: Untagged
+  m_TagString: Visitor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,6 +534,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446610875}
   m_CullTransparentMesh: 1
+--- !u!1 &580251036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 580251038}
+  - component: {fileID: 580251037}
+  m_Layer: 0
+  m_Name: RandomVisitorController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &580251037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580251036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f4e41c9d8d7129438a707c05495d73e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visitorPrefabs:
+  - {fileID: 209835829}
+  - {fileID: 209835829}
+  spawnInterval: 3
+  doorManPosition: {x: 0, y: 0.5, z: -7}
+--- !u!4 &580251038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580251036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675006623
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,53 +1037,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037702375}
   m_CullTransparentMesh: 1
---- !u!1 &1303901404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1303901406}
-  - component: {fileID: 1303901405}
-  m_Layer: 0
-  m_Name: RandomVisitorController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1303901405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303901404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f4e41c9d8d7129438a707c05495d73e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visitorPrefabs:
-  - {fileID: 209835829}
-  spawnInterval: 3
-  doorManPosition: {x: 0, y: 0.5, z: -7}
---- !u!4 &1303901406
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303901404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1363493128
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,8 +1046,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1363493131}
-  - component: {fileID: 1363493130}
   - component: {fileID: 1363493129}
+  - component: {fileID: 1363493130}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1072,18 +1073,12 @@ MonoBehaviour:
   - {fileID: 1484430862}
   - {fileID: 1037702377}
   questionAndAnswers:
-  - question: "\u30EA\u30F3\u30B4\u306E\u8272\u306F\u4F55\u8272\uFF1F"
-    answers:
-    - "\u9752\u8272"
-    - "\u8D64\u8272"
-    - "\u7D2B\u8272"
-    correctAnswer: "\u8D64\u8272"
-  - question: "\u521D\u4EE3\u5185\u95A3\u7DCF\u7406\u5927\u81E3\u306F\uFF1F"
-    answers:
-    - "\u7A32\u57A3\u9000\u52A9"
-    - "\u9ED2\u7530\u6E05\u9686"
-    - "\u4F0A\u85E4\u535A\u6587"
-    correctAnswer: "\u4F0A\u85E4\u535A\u6587"
+  - question: 
+    answers: []
+    correctAnswer: 
+  - question: 
+    answers: []
+    correctAnswer: 
   currentQuestionIndex: -1
   gameManager: {fileID: 1363493130}
 --- !u!114 &1363493130
@@ -1098,13 +1093,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea098338c2ca0a479dcf00978df5ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomVisitorControllerObject: {fileID: 1303901404}
+  randomVisitorControllerObject: {fileID: 580251036}
   qAndAScript: {fileID: 1363493129}
   scoreText: {fileID: 843285838}
   timerText: {fileID: 446610877}
   finishPanel: {fileID: 1613423054}
   returnToTitleButton: {fileID: 1630879547}
   restartButton: {fileID: 1524365254}
+  rankingButton: {fileID: 1949545483}
   timeLimitPerQuestion: 5
 --- !u!4 &1363493131
 Transform:

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject finishPanel; // ゲームオーバー時に表示するパネルUI
     public Button returnToTitleButton; // タイトルに戻るボタン
     public Button restartButton; // ゲームをリスタートするボタン
+    public Button rankingButton;
     public float timeLimitPerQuestion = 5f; // 1問あたりの制限時間
 
     int score = 0; // 正解数
@@ -102,6 +103,7 @@ public class GameManager : MonoBehaviour
         restartButton.onClick.RemoveAllListeners(); // リスナーを一旦クリア
         returnToTitleButton.onClick.AddListener(ReturnToTitle);
         restartButton.onClick.AddListener(RestartGame);
+        rankingButton.onClick.AddListener(GoToRanking);
     }
 
     public void RestartGame()
