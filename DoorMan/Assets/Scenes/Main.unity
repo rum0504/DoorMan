@@ -1085,6 +1085,7 @@ MonoBehaviour:
     - "\u4F0A\u85E4\u535A\u6587"
     correctAnswer: "\u4F0A\u85E4\u535A\u6587"
   currentQuestionIndex: -1
+  gameManager: {fileID: 1363493130}
 --- !u!114 &1363493130
 MonoBehaviour:
   m_ObjectHideFlags: 0
