@@ -566,8 +566,9 @@ MonoBehaviour:
   visitorPrefabs:
   - {fileID: 209835829}
   - {fileID: 209835829}
-  spawnInterval: 3
+  spawnPosition: {x: 0, y: 0.5, z: 10}
   doorManPosition: {x: 0, y: 0.5, z: -7}
+  speed: 5
 --- !u!4 &580251038
 Transform:
   m_ObjectHideFlags: 0
@@ -1073,12 +1074,18 @@ MonoBehaviour:
   - {fileID: 1484430862}
   - {fileID: 1037702377}
   questionAndAnswers:
-  - question: 
-    answers: []
-    correctAnswer: 
-  - question: 
-    answers: []
-    correctAnswer: 
+  - question: "\u30EA\u30F3\u30B4\u306E\u8272\u306F\u4F55\u8272\uFF1F"
+    answers:
+    - "\u9752\u8272"
+    - "\u7D2B\u8272"
+    - "\u8D64\u8272"
+    correctAnswer: "\u8D64\u8272"
+  - question: "2024\u5E74\u306E\u5143\u53F7\u306F\uFF1F"
+    answers:
+    - "\u662D\u548C"
+    - "\u5E73\u6210"
+    - "\u4EE4\u548C"
+    correctAnswer: "\u4EE4\u548C"
   currentQuestionIndex: -1
   gameManager: {fileID: 1363493130}
 --- !u!114 &1363493130
@@ -1088,7 +1095,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363493128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fea098338c2ca0a479dcf00978df5ebf, type: 3}
   m_Name: 

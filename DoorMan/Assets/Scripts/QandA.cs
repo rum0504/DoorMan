@@ -1,17 +1,20 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class QandA : MonoBehaviour
 {
+    public GameManager gameManager; // GameManagerへの参照を保持する変数
+    public RandomVisitorController randomVisitorController;
     public Text questionText; // 問題を表示するテキストUI
     public Button[] answerButtons; // 答えを表示するボタンUI
     public QuestionAndAnswer[] questionAndAnswers; // 問題と答えの配列
 
-    public int currentQuestionIndex = -1; // 現在の問題のインデックス
-    public GameManager gameManager; // GameManagerへの参照
+    int currentQuestionIndex = -1; // 現在の問題のインデックス
 
     void Start()
     {
+        randomVisitorController = GameObject.FindObjectOfType<RandomVisitorController>();
         ShowNextQuestion();
     }
 
@@ -20,8 +23,8 @@ public class QandA : MonoBehaviour
         currentQuestionIndex++;
         if (currentQuestionIndex >= questionAndAnswers.Length)
         {
-            // 問題が終了した場合は最初の問題に戻る
-            currentQuestionIndex = 0;
+            // 問題が終了した場合は最初の問題に戻るのではなく、最後の問題に達した場合に初期化しない
+            currentQuestionIndex = questionAndAnswers.Length - 1;
         }
 
         // 問題と答えを表示
@@ -38,12 +41,26 @@ public class QandA : MonoBehaviour
         }
     }
 
+
     void CheckAnswer(string chosenAnswer)
     {
         if (chosenAnswer == questionAndAnswers[currentQuestionIndex].correctAnswer)
         {
             Debug.Log("正解!");
             // 正解の処理を記述する
+            gameManager.UpdateScore(1); // GameManagerのUpdateScore関数を呼び出してスコアを増やす
+
+            // 正解したら来訪者を消去して新しい来訪者を生成する
+            GameObject visitor = GameObject.FindGameObjectWithTag("Visitor");
+            if (visitor != null)
+            {
+                Destroy(visitor);
+                randomVisitorController.SpawnVisitor(); // 新しい来訪者を生成
+            }
+            else
+            {
+                Debug.Log("来訪者がすでに破棄されています。");
+            }
         }
         else
         {
@@ -55,6 +72,10 @@ public class QandA : MonoBehaviour
         // 次の問題を表示
         ShowNextQuestion();
     }
+
+
+
+
 
     string[] ShuffleAnswers(string[] answers)
     {
