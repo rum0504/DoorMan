@@ -14,8 +14,21 @@ public class QandA : MonoBehaviour
 
     void Start()
     {
-        randomVisitorController = GameObject.FindObjectOfType<RandomVisitorController>();
-        ShowNextQuestion();
+        
+            // RandomVisitorControllerオブジェクトが存在するかを確認する
+            RandomVisitorController controller = FindObjectOfType<RandomVisitorController>();
+            if (controller != null)
+            {
+                randomVisitorController = controller;
+            }
+            else
+            {
+                Debug.LogError("RandomVisitorControllerが見つかりませんでした。");
+            }
+
+            ShowNextQuestion();
+        
+
     }
 
     public void ShowNextQuestion()
@@ -41,7 +54,6 @@ public class QandA : MonoBehaviour
         }
     }
 
-
     void CheckAnswer(string chosenAnswer)
     {
         if (chosenAnswer == questionAndAnswers[currentQuestionIndex].correctAnswer)
@@ -50,17 +62,15 @@ public class QandA : MonoBehaviour
             // 正解の処理を記述する
             gameManager.UpdateScore(1); // GameManagerのUpdateScore関数を呼び出してスコアを増やす
 
-            // 正解したら来訪者を消去して新しい来訪者を生成する
-            GameObject visitor = GameObject.FindGameObjectWithTag("Visitor");
-            if (visitor != null)
-            {
-                Destroy(visitor);
-                randomVisitorController.SpawnVisitor(); // 新しい来訪者を生成
-            }
-            else
-            {
-                Debug.Log("来訪者がすでに破棄されています。");
-            }
+            // randomVisitorControllerがnullでないことを確認し、それからSpawnVisitorを呼び出す
+                if (randomVisitorController != null)
+                {
+                    randomVisitorController.SpawnVisitor(); // 新しい来訪者を生成
+                }
+                else
+                {
+                    Debug.LogError("randomVisitorControllerがnullです。");
+                }
         }
         else
         {
@@ -74,8 +84,7 @@ public class QandA : MonoBehaviour
     }
 
 
-
-
+    
 
     string[] ShuffleAnswers(string[] answers)
     {

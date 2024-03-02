@@ -10,6 +10,7 @@ public class RandomVisitorController : MonoBehaviour
     public float speed = 1.0f; // 来訪者の移動速度
 
     public GameManager gameManager; // GameManagerへの参照を保持する変数
+    GameObject currentVisitor; // 現在の来訪者を保持する変数
 
 
     void Start()
@@ -37,8 +38,17 @@ public class RandomVisitorController : MonoBehaviour
 
     public void SpawnVisitor()
     {
-        // ランダムな来訪者のプレハブを選択
+        // 来訪者が存在する場合は削除
+        GameObject oldVisitor = GameObject.FindGameObjectWithTag("Visitor");
+        if (oldVisitor != null)
+        {
+            Destroy(oldVisitor);
+        }
+
+        // 新しい来訪者の生成
         int randomIndex = Random.Range(0, visitorPrefabs.Length);
         Instantiate(visitorPrefabs[randomIndex], spawnPosition, Quaternion.identity);
     }
+
+
 }
