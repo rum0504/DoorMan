@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class QandA : MonoBehaviour
 {
@@ -10,67 +11,82 @@ public class QandA : MonoBehaviour
     public Button[] answerButtons; // 答えを表示するボタンUI
     public QuestionAndAnswer[] questionAndAnswers; // 問題と答えの配列
 
-    int currentQuestionIndex = -1; // 現在の問題のインデックス
+    private List<int> questionIndexes = new List<int>(); // 問題のインデックスをランダムに管理するリスト
+    public AudioSource correctAnswerSound;
 
     void Start()
     {
-        
-            // RandomVisitorControllerオブジェクトが存在するかを確認する
-            RandomVisitorController controller = FindObjectOfType<RandomVisitorController>();
-            if (controller != null)
-            {
-                randomVisitorController = controller;
-            }
-            else
-            {
-                Debug.LogError("RandomVisitorControllerが見つかりませんでした。");
-            }
+        // 問題のインデックスをランダムにシャッフル
+        ShuffleQuestionIndexes();
+        ShowNextQuestion();
+    }
 
-            ShowNextQuestion();
-        
-
+    void ShuffleQuestionIndexes()
+    {
+        // 問題のインデックスを初期化
+        questionIndexes.Clear();
+        // ランダムにインデックスを追加
+        for (int i = 0; i < questionAndAnswers.Length; i++)
+        {
+            questionIndexes.Add(i);
+        }
+        // リストをシャッフル
+        for (int i = 0; i < questionIndexes.Count; i++)
+        {
+            int temp = questionIndexes[i];
+            int randomIndex = Random.Range(i, questionIndexes.Count);
+            questionIndexes[i] = questionIndexes[randomIndex];
+            questionIndexes[randomIndex] = temp;
+        }
     }
 
     public void ShowNextQuestion()
     {
-        currentQuestionIndex++;
-        if (currentQuestionIndex >= questionAndAnswers.Length)
+        // 問題のインデックスを取得し、リストから削除
+        if (questionIndexes.Count == 0)
         {
-            // 問題が終了した場合は最初の問題に戻るのではなく、最後の問題に達した場合に初期化しない
-            currentQuestionIndex = questionAndAnswers.Length - 1;
+            // 問題がすべて表示されたらリストを再度シャッフル
+            ShuffleQuestionIndexes();
         }
+        int nextQuestionIndex = questionIndexes[0];
+        questionIndexes.RemoveAt(0);
 
         // 問題と答えを表示
-        questionText.text = questionAndAnswers[currentQuestionIndex].question;
+        questionText.text = questionAndAnswers[nextQuestionIndex].question;
 
         // ボタンに選択肢をランダムに表示
-        string[] answers = ShuffleAnswers(questionAndAnswers[currentQuestionIndex].answers);
+        string[] answers = ShuffleAnswers(questionAndAnswers[nextQuestionIndex].answers);
         for (int i = 0; i < answerButtons.Length; i++)
         {
             answerButtons[i].GetComponentInChildren<Text>().text = answers[i];
             string chosenAnswer = answers[i]; // ラムダ式内での正しい参照を確保する
             answerButtons[i].onClick.RemoveAllListeners(); // リスナーを一旦クリア
-            answerButtons[i].onClick.AddListener(() => CheckAnswer(chosenAnswer));
+            answerButtons[i].onClick.AddListener(() => CheckAnswer(chosenAnswer, nextQuestionIndex));
         }
     }
 
-    void CheckAnswer(string chosenAnswer)
+    void CheckAnswer(string chosenAnswer, int currentQuestionIndex)
     {
         if (chosenAnswer == questionAndAnswers[currentQuestionIndex].correctAnswer)
         {
             Debug.Log("正解!");
+            // 正解の音を再生する
+            if (correctAnswerSound != null)
+            {
+                correctAnswerSound.Play();
+            }
             // 正解の処理を記述する
             gameManager.UpdateScore(1); // GameManagerのUpdateScore関数を呼び出してスコアを増やす
 
             // randomVisitorControllerがnullでないことを確認し、それからSpawnVisitorを呼び出す
-                if (randomVisitorController != null)
-                {
-                    randomVisitorController.SpawnVisitor(); // 新しい来訪者を生成
-                }
-                else
-                {
-                    Debug.LogError("randomVisitorControllerがnullです。");
-                }
+            if (randomVisitorController != null)
+            {
+                randomVisitorController.SpawnVisitor(); // 新しい来訪者を生成
+            }
+            else
+            {
+                Debug.LogError("randomVisitorControllerがnullです。");
+            }
         }
         else
         {
@@ -82,9 +98,6 @@ public class QandA : MonoBehaviour
         // 次の問題を表示
         ShowNextQuestion();
     }
-
-
-    
 
     string[] ShuffleAnswers(string[] answers)
     {
