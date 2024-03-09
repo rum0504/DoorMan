@@ -14,8 +14,6 @@ public class RandomVisitorController : MonoBehaviour
     public GameManager gameManager; // GameManagerへの参照を保持する変数
     GameObject currentVisitor; // 現在の来訪者を保持する変数
 
-    public Image redImage;
-
 
     void Start()
     {
@@ -32,15 +30,10 @@ public class RandomVisitorController : MonoBehaviour
             float step = speed * Time.deltaTime;
             visitor.transform.position = Vector3.MoveTowards(visitor.transform.position, doorManPosition, step);
 
-            if(visitor.transform.position == damagePosition)
-            {
-                StartCoroutine(ColorCoroutine()); // 赤く点滅させるCoroutineを開始
-            }
-
             // 来訪者がドアマンの位置に着いたらゲームオーバーにする
             if (visitor.transform.position == doorManPosition)
             {
-                StopCoroutine(ColorCoroutine());
+                Destroy(visitor);
                 gameManager.GameOver(); // GameManagerのGameOver関数を呼び出す
             }
         }
@@ -52,7 +45,6 @@ public class RandomVisitorController : MonoBehaviour
         GameObject oldVisitor = GameObject.FindGameObjectWithTag("Visitor");
         if (oldVisitor != null)
         {
-            StopCoroutine(ColorCoroutine());
             Destroy(oldVisitor);
         }
 
@@ -63,21 +55,5 @@ public class RandomVisitorController : MonoBehaviour
         newVisitor.transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
-    IEnumerator ColorCoroutine()
-    {
-        while (true)
-        {
-            // 赤く点滅させる処理
-            Color redColor = Color.red;
-            redColor.a = 0.5f; // 透明度を設定する（0.0から1.0の間で指定）
-            redImage.color = redColor;
-            yield return new WaitForSeconds(0.1f);
-
-            Color whiteColor = Color.white;
-            whiteColor.a = 0f; // 透明度を設定する（0.0から1.0の間で指定）
-            redImage.color = whiteColor;
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
 
 }

@@ -21,4 +21,14 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
+    public void GotoTitle()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
+    public void RestartMain()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
