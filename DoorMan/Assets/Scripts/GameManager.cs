@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     bool gameIsOver; // ゲームが終了したかどうかのフラグ
     bool rankingPanelisActive; //ランキングパネルが表示されているかのフラグ
 
+    public Text finalScoreText;
+
     void Start()
     {
         gameIsOver = false;
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("GameOver!");
         gameIsOver = true;
         finishPanel.SetActive(true);
+        finalScoreText.text = score.ToString() + "問正解した";
         returnToTitleButton.onClick.RemoveAllListeners(); // リスナーを一旦クリア
         restartButton.onClick.RemoveAllListeners(); // リスナーを一旦クリア
         returnToTitleButton.onClick.AddListener(ReturnToTitle);
