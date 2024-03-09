@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 4062564402526866449}
   m_Layer: 0
   m_Name: Peasant Nolant Green(Free Version)
-  m_TagString: Untagged
+  m_TagString: Visitor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -801,8 +801,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.50935376, y: 1.801828, z: 0.7037538}
+  m_Center: {x: -0.015455186, y: 0.8831089, z: -0.14812309}
 --- !u!54 &4062564402526866449
 Rigidbody:
   m_ObjectHideFlags: 0
