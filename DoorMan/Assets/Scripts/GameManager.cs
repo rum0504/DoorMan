@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     public Text scoreText; // 正解数を表示するテキストUI
     public GameObject finishPanel; // ゲームオーバー時に表示するパネルUI
-    public GameObject rankingPanel; // ランキングの時に表示するパネルUI
     public Button returnToTitleButton; // タイトルに戻るボタン
     public Button restartButton; // ゲームをリスタートするボタン
     public Button rankingButton;
@@ -22,7 +21,6 @@ public class GameManager : MonoBehaviour
         gameIsOver = false;
         rankingPanelisActive = false;
         finishPanel.SetActive(false);
-        rankingPanel.SetActive(false);
         UpdateScoreText();
     }
 
@@ -63,6 +61,5 @@ public class GameManager : MonoBehaviour
     public void GoToRanking()
     {
         rankingPanelisActive = true;
-        rankingPanel.SetActive(true);
     }
 }
