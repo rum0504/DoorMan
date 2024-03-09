@@ -16,12 +16,16 @@ public class GameManager : MonoBehaviour
 
     public Text finalScoreText;
 
+
     void Start()
     {
+        int cns = PlayerPrefs.GetInt("score");
         gameIsOver = false;
         rankingPanelisActive = false;
         finishPanel.SetActive(false);
         UpdateScoreText();
+
+
     }
 
     public void UpdateScore(int scoreIncrement)
@@ -46,6 +50,7 @@ public class GameManager : MonoBehaviour
         returnToTitleButton.onClick.AddListener(ReturnToTitle);
         restartButton.onClick.AddListener(RestartGame);
         rankingButton.onClick.AddListener(GoToRanking);
+        PlayerPrefs.SetInt("score", score);
     }
 
     public void RestartGame()

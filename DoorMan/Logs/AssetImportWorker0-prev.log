@@ -15,11 +15,11 @@ C:/Users/bloss/Desktop/AI/OriginalGame/DoorMan
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52956
+56035
 Successfully changed project path to: C:/Users/bloss/Desktop/AI/OriginalGame/DoorMan
 C:/Users/bloss/Desktop/AI/OriginalGame/DoorMan
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.14 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.82 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,58 +35,113 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56844
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002938 seconds.
+Registered in 0.003549 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 31.52 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 36.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.273 seconds
+- Completed reload, in  1.256 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002494 seconds.
+Registered in 0.001891 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.907 seconds
+- Completed reload, in  0.844 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1130 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 59.1 MB.
-System memory in use after: 59.2 MB.
+System memory in use before: 59.5 MB.
+System memory in use after: 59.5 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1582.
-Total: 2.160600 ms (FindLiveObjects: 0.285400 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.710300 ms  DeleteObjects: 0.116800 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1584.
+Total: 2.717900 ms (FindLiveObjects: 0.672100 ms CreateObjectMapping: 0.111200 ms MarkObjects: 1.807000 ms  DeleteObjects: 0.124600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/DenysAlmaral
-  artifactKey: Guid(6a40b731ee424b442b83c73047aedf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DenysAlmaral using Guid(6a40b731ee424b442b83c73047aedf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb0521322db6cd950c683160febc8f0') in 0.012767 seconds
-  Import took 0.015677 seconds .
+  path: Assets/Scenes/Ranking.unity
+  artifactKey: Guid(d73e77c68aad3044ca2b4ae405fb774a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Ranking.unity using Guid(d73e77c68aad3044ca2b4ae405fb774a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04619e4cebc87de566509a06eb689667') in 0.022434 seconds
+  Import took 0.024851 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003498 seconds.
+Registered in 0.005938 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+PlayFab.PfEditor.PlayFabEditorPrefsSO:get_Instance () (at Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs:38)
+PlayFab.PfEditor.SubMenuComponent:RegisterMenuItem (string,System.Action) (at Assets/PlayFabEditorExtensions/Editor/Scripts/Components/SubMenuComponent.cs:101)
+PlayFab.PfEditor.PlayFabEditorDataMenu:RegisterMenu () (at Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:93)
+PlayFab.PfEditor.PlayFabEditorDataMenu:.cctor () (at Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:74)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs line 38]
+
+UnityEngine.UnityException: Creating asset at path Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at PlayFab.PfEditor.PlayFabEditorPrefsSO.get_Instance () [0x00084] in C:\Users\bloss\Desktop\AI\OriginalGame\DoorMan\Assets\PlayFabEditorExtensions\Editor\Scripts\Utils\PlayFabEditorPrefsSO.cs:38 
+  at PlayFab.PfEditor.SubMenuComponent.RegisterMenuItem (System.String n, System.Action m) [0x00010] in C:\Users\bloss\Desktop\AI\OriginalGame\DoorMan\Assets\PlayFabEditorExtensions\Editor\Scripts\Components\SubMenuComponent.cs:101 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu.RegisterMenu () [0x00018] in C:\Users\bloss\Desktop\AI\OriginalGame\DoorMan\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:93 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu..cctor () [0x0003a] in C:\Users\bloss\Desktop\AI\OriginalGame\DoorMan\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:74 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.122 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1161 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1620.
+Total: 2.906000 ms (FindLiveObjects: 0.281500 ms CreateObjectMapping: 0.046200 ms MarkObjects: 2.427100 ms  DeleteObjects: 0.147700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 337.154925 seconds.
+  path: Assets/PlayFabEditorExtensions
+  artifactKey: Guid(e6b6b62449f1f4ed1bdf033d7f2d2ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayFabEditorExtensions using Guid(e6b6b62449f1f4ed1bdf033d7f2d2ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae96eb99bb8b66693b2df97b17fd20a') in 0.013226 seconds
+  Import took 0.016464 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001514 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -96,853 +151,45 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.900 seconds
+- Completed reload, in  0.859 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 59.1 MB.
-System memory in use after: 59.2 MB.
+System memory in use before: 60.1 MB.
+System memory in use after: 60.2 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1585.
-Total: 3.628200 ms (FindLiveObjects: 0.307900 ms CreateObjectMapping: 0.071600 ms MarkObjects: 3.043300 ms  DeleteObjects: 0.202400 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1622.
+Total: 2.175800 ms (FindLiveObjects: 0.211600 ms CreateObjectMapping: 0.034100 ms MarkObjects: 1.811600 ms  DeleteObjects: 0.116200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.521177 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite
-  artifactKey: Guid(8e4dac715d09ecd4a841bd016fbd65b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite using Guid(8e4dac715d09ecd4a841bd016fbd65b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f110eafb320e12b904a48395bc17e27') in 0.012460 seconds
-  Import took 0.014722 seconds .
+  Time since last request: 96.778818 seconds.
+  path: Assets/PlayFabEditorExtensions
+  artifactKey: Guid(e6b6b62449f1f4ed1bdf033d7f2d2ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayFabEditorExtensions using Guid(e6b6b62449f1f4ed1bdf033d7f2d2ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b8674141450bfab3a0e23ef1ec9a16') in 0.005791 seconds
+  Import took 0.008658 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.318933 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations
-  artifactKey: Guid(35511a518699ffc459e949337821c705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations using Guid(35511a518699ffc459e949337821c705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbf4aa385e53d40c880b705f778c6a3') in 0.012941 seconds
-  Import took 0.015090 seconds .
+  Time since last request: 0.008884 seconds.
+  path: Assets/PlayFabEditorExtensions
+  artifactKey: Guid(e6b6b62449f1f4ed1bdf033d7f2d2ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayFabEditorExtensions using Guid(e6b6b62449f1f4ed1bdf033d7f2d2ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b8674141450bfab3a0e23ef1ec9a16') in 0.002795 seconds
+  Import took 0.005472 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.739961 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Materials
-  artifactKey: Guid(7fd286d1649d9f943879826fd060ee84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Materials using Guid(7fd286d1649d9f943879826fd060ee84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2cc7050027ad11567142ed3bc32f8c') in 0.010735 seconds
-  Import took 0.012930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.636330 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cad683e1878de14e8b878a341750cb5') in 0.282657 seconds
-  Import took 0.285500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.244496 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/CityPeople.cs
-  artifactKey: Guid(54f141628068b9b4493f69f797f003b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/CityPeople.cs using Guid(54f141628068b9b4493f69f797f003b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310764ea9369af7a15e95bcb5a9d098a') in 0.017885 seconds
-  Import took 0.020962 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015038 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/CityPeople.cs
-  artifactKey: Guid(54f141628068b9b4493f69f797f003b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/CityPeople.cs using Guid(54f141628068b9b4493f69f797f003b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '310764ea9369af7a15e95bcb5a9d098a') in 0.003804 seconds
-  Import took 0.006369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.592011 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778422d679842a93e2a40d4a0518df94') in 0.100631 seconds
-  Import took 0.103634 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.976549 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '765d429cc11b3aa18a85b43bb076f67e') in 0.079844 seconds
-  Import took 0.083291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.789726 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599eb2fc4589b87b1d219b7f78115361') in 0.097868 seconds
-  Import took 0.101576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.008307 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3157213247ffbf835fc0c492b04d94') in 0.078859 seconds
-  Import took 0.081956 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.967430 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab
-  artifactKey: Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab using Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f30e9283b01a84b37d83bbf2f3497d') in 0.091005 seconds
-  Import took 0.094418 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.840866 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab
-  artifactKey: Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab using Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2aa4532bee6798eb6d6ddd3149006ea') in 0.080850 seconds
-  Import took 0.083940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.696885 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d904408cddb3455ed07b1b055b7db8') in 0.083197 seconds
-  Import took 0.086294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.728174 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/Doctor_Male_B.prefab
-  artifactKey: Guid(314b13a2c4f89c74299eabc2a4c725c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/Doctor_Male_B.prefab using Guid(314b13a2c4f89c74299eabc2a4c725c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c91337ef98295f9bade0d30c09e391') in 0.089299 seconds
-  Import took 0.092844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.895499 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/Doctor_Male_B.prefab
-  artifactKey: Guid(314b13a2c4f89c74299eabc2a4c725c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/Doctor_Male_B.prefab using Guid(314b13a2c4f89c74299eabc2a4c725c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d31656aaab7813d8e2b225a7d50e62f') in 0.091031 seconds
-  Import took 0.094464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.614686 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/elder_Female_A.prefab
-  artifactKey: Guid(bcc8732b8b44622449c23934f89e68c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/elder_Female_A.prefab using Guid(bcc8732b8b44622449c23934f89e68c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b905c46de668b6255958262fe95731e') in 0.090396 seconds
-  Import took 0.094259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.686031 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/elder_Female_A.prefab
-  artifactKey: Guid(bcc8732b8b44622449c23934f89e68c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/elder_Female_A.prefab using Guid(bcc8732b8b44622449c23934f89e68c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ae73a9856bd4b3e511a5c14b2912cb') in 0.077310 seconds
-  Import took 0.080445 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.976773 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/little_boy_B.prefab
-  artifactKey: Guid(87a7b985b15a4244091de35d7df9169a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/little_boy_B.prefab using Guid(87a7b985b15a4244091de35d7df9169a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e380a5c908b1b6cbe114d12c5f009e2') in 0.087481 seconds
-  Import took 0.091075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.741594 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/little_boy_B.prefab
-  artifactKey: Guid(87a7b985b15a4244091de35d7df9169a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/little_boy_B.prefab using Guid(87a7b985b15a4244091de35d7df9169a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a55fc693a8eeaa8fd2db28a2caa099f') in 0.084227 seconds
-  Import took 0.087394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.621689 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5577bd5798e20c244ef6319982bfc6') in 0.081287 seconds
-  Import took 0.085292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.766961 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4a297d0d81004487a760f5d35ae0be') in 0.081058 seconds
-  Import took 0.084042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.742016 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7abb38d09be7abf1cc503436c8b80f2') in 0.077676 seconds
-  Import took 0.080893 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.332931 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75530c476d43c271cf2c474c23a5aa33') in 0.076220 seconds
-  Import took 0.080575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.289359 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6282909601129861b03be3804f3c6e') in 0.076257 seconds
-  Import took 0.079619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020964 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6282909601129861b03be3804f3c6e') in 0.079603 seconds
-  Import took 0.082814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.816622 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62b1f0e02cd62281ed3e524b649167e') in 0.077244 seconds
-  Import took 0.080824 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.661346 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d852f4e707dfe9c917e756ce2869e26') in 0.075072 seconds
-  Import took 0.079030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007302 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d852f4e707dfe9c917e756ce2869e26') in 0.078593 seconds
-  Import took 0.082487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.425129 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302fa16ef3a38c70245b2c710194e421') in 0.081123 seconds
-  Import took 0.084121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.922824 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156a45f1ebecf9d6b54401b53c26c7e5') in 0.075460 seconds
-  Import took 0.078434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026478 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab
-  artifactKey: Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/police_Female_A.prefab using Guid(f0ac6fb9ada49f24683e3eca20786103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156a45f1ebecf9d6b54401b53c26c7e5') in 0.075980 seconds
-  Import took 0.079554 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 232.351879 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec44bf7e9cba30ad3dd88caba0d7e15') in 0.083318 seconds
-  Import took 0.086443 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.894498 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d3942949bed878e9ddcd94fc7893c40') in 0.084130 seconds
-  Import took 0.087335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.869216 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000f80937b2b6d80aa4048fb5d80050b') in 0.086055 seconds
-  Import took 0.090392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.005555 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000f80937b2b6d80aa4048fb5d80050b') in 0.092656 seconds
-  Import took 0.095983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.604049 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b086b7c9d0f619b2b880dee969d75fb9') in 0.083652 seconds
-  Import took 0.086596 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.042959 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e8abe08c2c5200a3415279e171db10') in 0.079821 seconds
-  Import took 0.082785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015387 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e8abe08c2c5200a3415279e171db10') in 0.089469 seconds
-  Import took 0.092706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.830634 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3ba9dfb3aea848a70b44c3a76138f7') in 0.085898 seconds
-  Import took 0.089122 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.845883 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f971d904152eee0d1bc898a819177ff5') in 0.083762 seconds
-  Import took 0.087290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010176 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab
-  artifactKey: Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_K.prefab using Guid(2435736d6adca23458edd7c80c901e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f971d904152eee0d1bc898a819177ff5') in 0.084854 seconds
-  Import took 0.087992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.213337 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab
-  artifactKey: Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab using Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9224fc0cbab489c5b4cc6a8d836e6a7') in 0.091035 seconds
-  Import took 0.094197 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.977618 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab
-  artifactKey: Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Male_G.prefab using Guid(f71041fd118fbb34aa9d2dd6a1d96fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c032e01b30dc5d3b49a87f2dd8a9a675') in 0.084327 seconds
-  Import took 0.088022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.560931 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e424ad04d1021fbafbe70524fce3290') in 0.079731 seconds
-  Import took 0.083110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.691670 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d21c913c945289045e82a098e897eab') in 0.082137 seconds
-  Import took 0.085829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.857182 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '390566ce1f4a7c62f1c7e62d1e985515') in 0.077452 seconds
-  Import took 0.080567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013961 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '390566ce1f4a7c62f1c7e62d1e985515') in 0.079326 seconds
-  Import took 0.083236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.026602 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aabb43b1dfc8196a85ea9ff750c376d') in 0.076812 seconds
-  Import took 0.079858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.666786 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e3293347ad61a42066c8ae705219aa') in 0.077606 seconds
-  Import took 0.081189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015509 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e3293347ad61a42066c8ae705219aa') in 0.093039 seconds
-  Import took 0.096417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.470245 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '544cf1d46020c89f6dc9344a0983011c') in 0.075582 seconds
-  Import took 0.078883 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.063395 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab
-  artifactKey: Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_K.prefab using Guid(bcc8c8f342f71a7439ac0579aa86f030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '544cf1d46020c89f6dc9344a0983011c') in 0.078028 seconds
-  Import took 0.081236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.233714 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae318ee05a1dc71a6e23ce8bcbfb47e0') in 0.077413 seconds
-  Import took 0.080643 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.798989 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '195f890262581d59b483f343d669d7ff') in 0.078565 seconds
-  Import took 0.081734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.708398 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2f06ed00d4b903da643bbd53cca090') in 0.075952 seconds
-  Import took 0.079386 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.907329 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430c187198dd9cde72a47ea4ab8f8b9c') in 0.082712 seconds
-  Import took 0.085992 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.504482 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd721d557f0ff2af9a36221482e90073b') in 0.072327 seconds
-  Import took 0.075826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.512850 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489535efa8ed833808bc2bebdf6a8010') in 0.080033 seconds
-  Import took 0.083399 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.748158 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab
-  artifactKey: Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/casual_Female_G.prefab using Guid(bae26acf817c6dc4e82f95d9ef4ab46a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0251612e970df869f9a5726992ef1c') in 0.082912 seconds
-  Import took 0.086192 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.698719 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/Doctor_Male_B.prefab
-  artifactKey: Guid(314b13a2c4f89c74299eabc2a4c725c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/Doctor_Male_B.prefab using Guid(314b13a2c4f89c74299eabc2a4c725c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587f8158594d35ca3d602e59ee952daa') in 0.082053 seconds
-  Import took 0.085414 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.482719 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/elder_Female_A.prefab
-  artifactKey: Guid(bcc8732b8b44622449c23934f89e68c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/elder_Female_A.prefab using Guid(bcc8732b8b44622449c23934f89e68c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c66179e1e16297d6e88f5bd106846c5') in 0.082835 seconds
-  Import took 0.085963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.534333 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/little_boy_B.prefab
-  artifactKey: Guid(87a7b985b15a4244091de35d7df9169a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Prefabs/little_boy_B.prefab using Guid(87a7b985b15a4244091de35d7df9169a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b0f90bfdc6da23a6e3cdb888270175') in 0.098011 seconds
-  Import took 0.101694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 76.023405 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/City M Animator.controller
-  artifactKey: Guid(62283de8ca021c34aa5e61353fb9a6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/City M Animator.controller using Guid(62283de8ca021c34aa5e61353fb9a6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ac19387cccb6e686629d9e0268fa7e') in 0.079282 seconds
-  Import took 0.082202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.689396 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/City F Animator.controller
-  artifactKey: Guid(afe9de63454bbd448a9886ad5a285ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Demo_Scenes/Scripts/City F Animator.controller using Guid(afe9de63454bbd448a9886ad5a285ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef835226a817acefa19b8136d6306fcb') in 0.065044 seconds
-  Import took 0.067744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.599715 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/casual_Female_G.fbx
-  artifactKey: Guid(efa7cf83928a3bd42935d7898c6fe1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/casual_Female_G.fbx using Guid(efa7cf83928a3bd42935d7898c6fe1df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8528427e7f216ecbdb8e10466047af') in 0.056715 seconds
-  Import took 0.059636 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.307472 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/animated
-  artifactKey: Guid(8e31e41d75d2f7c469147d482739c810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/animated using Guid(8e31e41d75d2f7c469147d482739c810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8486f38c02a3b200a228ec0dbe51ed74') in 0.011288 seconds
-  Import took 0.013751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.347331 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_basicWalk_30f.anim
-  artifactKey: Guid(d79bc0fd3d1c9a84ba727aad99231c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_basicWalk_30f.anim using Guid(d79bc0fd3d1c9a84ba727aad99231c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3353f38b89c9afc60771957f4e26c31b') in 0.019867 seconds
-  Import took 0.022656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.925807 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_phoneWalking_40f.anim
-  artifactKey: Guid(0458ebeb27617be499b112242edafb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_phoneWalking_40f.anim using Guid(0458ebeb27617be499b112242edafb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600eedd06dfa96d0178fdbcf174f9cbb') in 0.019171 seconds
-  Import took 0.022920 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002183 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_phoneWalking_40f.anim
-  artifactKey: Guid(0458ebeb27617be499b112242edafb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_phoneWalking_40f.anim using Guid(0458ebeb27617be499b112242edafb5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600eedd06dfa96d0178fdbcf174f9cbb') in 0.009171 seconds
-  Import took 0.012466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.454275 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_slowWalk_40f.anim
-  artifactKey: Guid(5514cf4c8eb9634418fbb77da0bc474f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_slowWalk_40f.anim using Guid(5514cf4c8eb9634418fbb77da0bc474f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90509cd6ddd41e4f565c37596015187') in 0.022768 seconds
-  Import took 0.026542 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008389 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_slowWalk_40f.anim
-  artifactKey: Guid(5514cf4c8eb9634418fbb77da0bc474f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_slowWalk_40f.anim using Guid(5514cf4c8eb9634418fbb77da0bc474f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90509cd6ddd41e4f565c37596015187') in 0.007732 seconds
-  Import took 0.010653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.532440 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_phoneWalking_40f.anim
-  artifactKey: Guid(fd1e9a83e2921b24fa011f993cbcb97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_phoneWalking_40f.anim using Guid(fd1e9a83e2921b24fa011f993cbcb97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e43dde48b6b40039258b4610b1e79b') in 0.018270 seconds
-  Import took 0.022427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001636 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_phoneWalking_40f.anim
-  artifactKey: Guid(fd1e9a83e2921b24fa011f993cbcb97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_phoneWalking_40f.anim using Guid(fd1e9a83e2921b24fa011f993cbcb97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e43dde48b6b40039258b4610b1e79b') in 0.008582 seconds
-  Import took 0.011453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.406851 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_jogging_30f.anim
-  artifactKey: Guid(28b3643b89fce134d8983d5b7a91d0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_jogging_30f.anim using Guid(28b3643b89fce134d8983d5b7a91d0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87352940575931fcea59deed6e5dea99') in 0.019997 seconds
-  Import took 0.022841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003776 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_jogging_30f.anim
-  artifactKey: Guid(28b3643b89fce134d8983d5b7a91d0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_jogging_30f.anim using Guid(28b3643b89fce134d8983d5b7a91d0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87352940575931fcea59deed6e5dea99') in 0.009499 seconds
-  Import took 0.012172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.491137 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_basicWalk_30f.anim
-  artifactKey: Guid(2f30f4bf0b93ae34b80f7208aadfc8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_basicWalk_30f.anim using Guid(2f30f4bf0b93ae34b80f7208aadfc8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39be3145ee5c1090728f2cc2b1ddbd9') in 0.021901 seconds
-  Import took 0.024628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001389 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_basicWalk_30f.anim
-  artifactKey: Guid(2f30f4bf0b93ae34b80f7208aadfc8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_m_basicWalk_30f.anim using Guid(2f30f4bf0b93ae34b80f7208aadfc8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39be3145ee5c1090728f2cc2b1ddbd9') in 0.010492 seconds
-  Import took 0.013058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.172102 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_slowWalk_40f.anim
-  artifactKey: Guid(e41d8bd04681fe042bf04bacfd5074ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_slowWalk_40f.anim using Guid(e41d8bd04681fe042bf04bacfd5074ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f00eb3d1272958abbb31545bb83b49c') in 0.018926 seconds
-  Import took 0.022777 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002174 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_slowWalk_40f.anim
-  artifactKey: Guid(e41d8bd04681fe042bf04bacfd5074ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/locom_f_slowWalk_40f.anim using Guid(e41d8bd04681fe042bf04bacfd5074ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f00eb3d1272958abbb31545bb83b49c') in 0.009141 seconds
-  Import took 0.012449 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 75.590087 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_phoneTalking_180f.anim
-  artifactKey: Guid(2b8970a9943972e4f9e0af34827b21e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_phoneTalking_180f.anim using Guid(2b8970a9943972e4f9e0af34827b21e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0a3d5db0345f80c3cd23b5aebc7bb5') in 0.020679 seconds
-  Import took 0.023545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.639782 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_f_1_150f.anim
-  artifactKey: Guid(82e41969d6d36df42bcafd817676ddd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_f_1_150f.anim using Guid(82e41969d6d36df42bcafd817676ddd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d1577d1c8781eee1574a56f47b00d9f') in 0.022976 seconds
-  Import took 0.025742 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.058856 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_f_2_190f.anim
-  artifactKey: Guid(19b555b930185384981ace17d0fef203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_f_2_190f.anim using Guid(19b555b930185384981ace17d0fef203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02723e6395536718f87ff8b891c45d81') in 0.022585 seconds
-  Import took 0.025317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.551646 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_m_1_200f.anim
-  artifactKey: Guid(295e81d07b1a6d64a8252ddafaedb8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_m_1_200f.anim using Guid(295e81d07b1a6d64a8252ddafaedb8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6137199bd5df03c639453bd1055eab6b') in 0.023273 seconds
-  Import took 0.026411 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_m_1_200f.anim
-  artifactKey: Guid(295e81d07b1a6d64a8252ddafaedb8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Animations/idle_m_1_200f.anim using Guid(295e81d07b1a6d64a8252ddafaedb8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6137199bd5df03c639453bd1055eab6b') in 0.012963 seconds
-  Import took 0.015472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.237619 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/police_Female_A.fbx
-  artifactKey: Guid(b6804d93e01b7124294eccd05c06e280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/police_Female_A.fbx using Guid(b6804d93e01b7124294eccd05c06e280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '789797773a6a5a82e46118687c788178') in 0.037318 seconds
-  Import took 0.040813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.925416 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/casual_Male_K.fbx
-  artifactKey: Guid(b7c035cdee4609f4689888a8474b63b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/casual_Male_K.fbx using Guid(b7c035cdee4609f4689888a8474b63b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099a18f7cf945bffb18dc567af8000ef') in 0.049835 seconds
-  Import took 0.052660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.194977 seconds.
-  path: Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/casual_Male_G.fbx
-  artifactKey: Guid(50c8fe73844fb0a42bdb72b9873224e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/DenysAlmaral/CityPeopleLite/Meshes/casual_Male_G.fbx using Guid(50c8fe73844fb0a42bdb72b9873224e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec098f30fb30721d3b98adf0d59348be') in 0.032461 seconds
-  Import took 0.035683 seconds .
+  Time since last request: 6.305096 seconds.
+  path: Assets/PlayFabSDK
+  artifactKey: Guid(e53d5e839d5caa945b9b859abe15689b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayFabSDK using Guid(e53d5e839d5caa945b9b859abe15689b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c791a23b1f8ed901731464e3fbf90de') in 0.012568 seconds
+  Import took 0.015356 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001559 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.832 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.3 MB.
-System memory in use after: 77.4 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1601.
-Total: 2.024600 ms (FindLiveObjects: 0.262400 ms CreateObjectMapping: 0.041300 ms MarkObjects: 1.625700 ms  DeleteObjects: 0.093000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 403.954916 seconds.
-  path: Assets/Scripts/RandomVisitorController.cs
-  artifactKey: Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RandomVisitorController.cs using Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea852365f37c4555eb3d0bc2e0595cb') in 0.014841 seconds
-  Import took 0.017764 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029804 seconds.
-  path: Assets/Scripts/RandomVisitorController.cs
-  artifactKey: Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RandomVisitorController.cs using Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea852365f37c4555eb3d0bc2e0595cb') in 0.004010 seconds
-  Import took 0.006737 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001926 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.881 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.3 MB.
-System memory in use after: 77.4 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1604.
-Total: 2.260700 ms (FindLiveObjects: 0.312900 ms CreateObjectMapping: 0.069300 ms MarkObjects: 1.788000 ms  DeleteObjects: 0.088600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001706 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.878 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.4 MB.
-System memory in use after: 77.4 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1607.
-Total: 2.197800 ms (FindLiveObjects: 0.209800 ms CreateObjectMapping: 0.031900 ms MarkObjects: 1.861200 ms  DeleteObjects: 0.092700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001573 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.857 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.4 MB.
-System memory in use after: 77.4 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1610.
-Total: 3.464300 ms (FindLiveObjects: 0.301800 ms CreateObjectMapping: 0.054800 ms MarkObjects: 2.981600 ms  DeleteObjects: 0.123200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002028 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.4 MB.
-System memory in use after: 77.4 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1613.
-Total: 3.931800 ms (FindLiveObjects: 0.344700 ms CreateObjectMapping: 0.094400 ms MarkObjects: 3.378000 ms  DeleteObjects: 0.111500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002001 seconds.
+Registered in 0.001690 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -952,135 +199,15 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.878 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.4 MB.
-System memory in use after: 77.5 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1616.
-Total: 2.699100 ms (FindLiveObjects: 0.480700 ms CreateObjectMapping: 0.107300 ms MarkObjects: 2.014400 ms  DeleteObjects: 0.093900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001580 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.856 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.4 MB.
-System memory in use after: 77.5 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1619.
-Total: 2.893100 ms (FindLiveObjects: 0.376800 ms CreateObjectMapping: 0.103700 ms MarkObjects: 2.324600 ms  DeleteObjects: 0.085300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002061 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.789 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.4 MB.
-System memory in use after: 77.5 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1622.
-Total: 2.940900 ms (FindLiveObjects: 0.444600 ms CreateObjectMapping: 0.108600 ms MarkObjects: 2.302300 ms  DeleteObjects: 0.082200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 815.745344 seconds.
-  path: Assets/Scripts/RandomVisitorController.cs
-  artifactKey: Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RandomVisitorController.cs using Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e233fd95dc0a02181bbf4bfca5b4f047') in 0.014904 seconds
-  Import took 0.017174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.028089 seconds.
-  path: Assets/Scripts/RandomVisitorController.cs
-  artifactKey: Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/RandomVisitorController.cs using Guid(8f4e41c9d8d7129438a707c05495d73e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e233fd95dc0a02181bbf4bfca5b4f047') in 0.004024 seconds
-  Import took 0.007152 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001524 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.808 seconds
+- Completed reload, in  0.788 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1125 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 77.4 MB.
-System memory in use after: 77.5 MB.
+System memory in use before: 60.1 MB.
+System memory in use after: 60.1 MB.
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1625.
-Total: 3.243800 ms (FindLiveObjects: 0.400500 ms CreateObjectMapping: 0.082100 ms MarkObjects: 2.668500 ms  DeleteObjects: 0.088700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 608.392322 seconds.
-  path: Assets/Materials/DoorManSad.png
-  artifactKey: Guid(fcfc58326df6e414fae8904362c7e108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/DoorManSad.png using Guid(fcfc58326df6e414fae8904362c7e108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17dcce0d503a9487124bd8840fcfb5ed') in 0.116859 seconds
-  Import took 0.120761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.621271 seconds.
-  path: Assets/Materials/DoorManSad.png
-  artifactKey: Guid(fcfc58326df6e414fae8904362c7e108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/DoorManSad.png using Guid(fcfc58326df6e414fae8904362c7e108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e975bccf83858d419dda22ffd47d1d') in 0.047263 seconds
-  Import took 0.049810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 989.034871 seconds.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(fea098338c2ca0a479dcf00978df5ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameManager.cs using Guid(fea098338c2ca0a479dcf00978df5ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569b554a5c79f0b498066476d176b38c') in 0.012349 seconds
-  Import took 0.015633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003039 seconds.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(fea098338c2ca0a479dcf00978df5ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameManager.cs using Guid(fea098338c2ca0a479dcf00978df5ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569b554a5c79f0b498066476d176b38c') in 0.003807 seconds
-  Import took 0.006104 seconds .
+Total: 2.330400 ms (FindLiveObjects: 0.264800 ms CreateObjectMapping: 0.033500 ms MarkObjects: 1.932700 ms  DeleteObjects: 0.097300 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
