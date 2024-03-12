@@ -1,9 +1,11 @@
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening; //DOTween使用に必要
 using UnityEngine.UI;
-
+ 
 public class ButtonScript :
     MonoBehaviour,
     IPointerClickHandler,

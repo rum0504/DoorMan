@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
         rankingPanel.SetActive(false);
         UpdateScoreText();
 
-
     }
 
     public void UpdateScore(int scoreIncrement)
