@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Video;
 
 public class QandA : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class QandA : MonoBehaviour
     public Text questionText; // 問題を表示するテキストUI
     public Button[] answerButtons; // 答えを表示するボタンUI
     public QuestionAndAnswer[] questionAndAnswers; // 問題と答えの配列
+    public VideoPlayer effectVideoPlayer; // エフェクト用のVideoPlayer
+    public int correctAnswersForEffect = 10; // エフェクトを再生するために必要な正解数
+    private int correctAnswersCount = 0; // 現在の正解数
 
     private List<int> questionIndexes = new List<int>(); // 問題のインデックスをランダムに管理するリスト
     public AudioSource correctAnswerSound;
@@ -77,6 +81,13 @@ public class QandA : MonoBehaviour
             }
             // 正解の処理を記述する
             gameManager.UpdateScore(1); // GameManagerのUpdateScore関数を呼び出してスコアを増やす
+            correctAnswersCount++; // 正解数を増やす
+
+            // 正解数がエフェクトを再生するための数に達したかどうかをチェック
+            if (correctAnswersCount % correctAnswersForEffect == 0)
+            {
+                PlayEffect(); // エフェクトを再生
+            }
 
             // randomVisitorControllerがnullでないことを確認し、それからSpawnVisitorを呼び出す
             if (randomVisitorController != null)
@@ -110,6 +121,14 @@ public class QandA : MonoBehaviour
             answers[randomIndex] = temp;
         }
         return answers;
+    }
+
+    void PlayEffect()
+    {
+        if (effectVideoPlayer != null)
+        {
+            effectVideoPlayer.Play(); // エフェクトを再生
+        }
     }
 }
 
