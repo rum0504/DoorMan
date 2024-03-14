@@ -21,6 +21,7 @@ public class QandA : MonoBehaviour
     {
         ShuffleQuestionIndexes();
         ShowNextQuestion();
+        effectVideoPlayer.gameObject.SetActive(false);
     }
 
     void ShuffleQuestionIndexes()
@@ -39,7 +40,46 @@ public class QandA : MonoBehaviour
         }
     }
 
-    public void ShowNextQuestion()
+    void CheckAnswer(string chosenAnswer, int currentQuestionIndex)
+    {
+        if (chosenAnswer == questionAndAnswers[currentQuestionIndex].correctAnswer)
+        {
+            Debug.Log("Correct!");
+            if (correctAnswerSound != null)
+            {
+                correctAnswerSound.Play();
+            }
+            gameManager.UpdateScore(1);
+            correctAnswersCount++;
+
+            if (correctAnswersCount % correctAnswersForEffect == 0)
+            {
+                effectVideoPlayer.gameObject.SetActive(true);
+                PlayEffect();
+            }
+
+            if (randomVisitorController != null)
+            {
+                randomVisitorController.SpawnVisitor();
+            }
+            else
+            {
+                Debug.LogError("randomVisitorController is null.");
+            }
+
+            if (correctAnswersCount % correctAnswersForEffect != 0 && questionIndexes.Count > 0)
+            {
+                ShowNextQuestion(); // ここで次の質問を表示
+            }
+        }
+        else
+        {
+            Debug.Log("Wrong...");
+            gameManager.GameOver();
+        }
+    }
+
+    void ShowNextQuestion()
     {
         if (questionIndexes.Count == 0)
         {
@@ -60,40 +100,6 @@ public class QandA : MonoBehaviour
         }
     }
 
-    void CheckAnswer(string chosenAnswer, int currentQuestionIndex)
-    {
-        if (chosenAnswer == questionAndAnswers[currentQuestionIndex].correctAnswer)
-        {
-            Debug.Log("Correct!");
-            if (correctAnswerSound != null)
-            {
-                correctAnswerSound.Play();
-            }
-            gameManager.UpdateScore(1);
-            correctAnswersCount++;
-
-            if (correctAnswersCount % correctAnswersForEffect == 0)
-            {
-                PlayEffect();
-            }
-
-            if (randomVisitorController != null)
-            {
-                randomVisitorController.SpawnVisitor();
-            }
-            else
-            {
-                Debug.LogError("randomVisitorController is null.");
-            }
-        }
-        else
-        {
-            Debug.Log("Wrong...");
-            gameManager.GameOver();
-        }
-
-        ShowNextQuestion();
-    }
 
 
     string[] ShuffleAnswers(string[] answers)
@@ -113,21 +119,18 @@ public class QandA : MonoBehaviour
         if (effectVideoPlayer != null && !effectVideoPlayer.isPlaying && effectVideoPlayer.isActiveAndEnabled)
         {
             effectVideoPlayer.Play();
-            StartCoroutine(WaitForVideoEnd());
+            effectVideoPlayer.loopPointReached += OnEffectVideoEnd;
         }
     }
 
-    IEnumerator WaitForVideoEnd()
+    void OnEffectVideoEnd(UnityEngine.Video.VideoPlayer vp)
     {
-        while (effectVideoPlayer.isPlaying)
-        {
-            yield return null;
-        }
-        if (correctAnswersCount % correctAnswersForEffect == 0)
-        {
-            PlayEffect();
-        }
+        vp.loopPointReached -= OnEffectVideoEnd;
+        effectVideoPlayer.Stop();
+        effectVideoPlayer.gameObject.SetActive(false);
+        correctAnswersCount = 0; // 正解数のカウントをリセットする
     }
+
 }
 
 [System.Serializable]
